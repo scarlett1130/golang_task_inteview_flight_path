@@ -30,10 +30,13 @@ Usage
 To use the API, send a POST request to http://localhost:8080/calculate with the list of flights in the request body. The API will return the total flight path in the response.
 
 Example
-Copy code
 
-curl -X POST -H "Content-Type: application/json" -d '[{"source": "SFO", "destination": "EWR"},{"source": "ATL", "destination": "EWR"},{"source": "SFO", "destination": "ATL"},{"source": "GSO", "destination": "IND"},{"source": "ATL", "destination": "GSO"}]' http://localhost:8080/calculate
+curl -X POST -H "Content-Type: application/json" -d 
+'[{"source": "SFO", "destination": "EWR"},{"source": "ATL", "destination": "EWR"},{"source": "SFO", "destination": "ATL"},{"source": "GSO", "destination": "IND"},{"source": "ATL", "destination": "GSO"}]' 
 
-This will return the total flight path [{"source": "SFO", "destination": "EWR"}]
+http://localhost:8080/calculate
+
+This will return the total flight path 
+[{"source": "SFO", "destination": "EWR"}]
 
 Please make sure that you have the API running on your localhost on port 8080 before making the request.
